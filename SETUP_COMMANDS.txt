@@ -1,0 +1,39 @@
+# MERN Payment Gateway Setup Commands
+
+Follow these commands to set up and run the project on a new laptop:
+
+## 1. Clone the Project
+```
+git clone <your-repo-url>
+cd mern_payment
+```
+
+## 2. Backend Setup
+```
+cd server
+npm install
+# Add your Stripe secret key in .env
+# Example:
+# STRIPE_SECRET_KEY=sk_test_...
+npm start
+```
+
+## 3. Frontend Setup (in a new terminal)
+```
+cd client
+npm install --legacy-peer-deps
+npm install react-scripts --save-dev
+# In src/App.js, set your Stripe publishable key
+npm start
+```
+
+## 4. Open the App
+- Visit: http://localhost:3000
+- Use Stripe test card: 4242 4242 4242 4242
+
+---
+
+**Note:**
+- Make sure Node.js and npm are installed on your laptop.
+- Use two terminals: one for backend, one for frontend.
+- Update Stripe keys for your own account.
